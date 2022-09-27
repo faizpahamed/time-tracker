@@ -7,6 +7,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+
 import training.taylor.timetracker.core.dao.TimeEntry;
 
 import java.util.List;
@@ -16,6 +18,7 @@ import java.util.List;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = TrackerCoreConfig.class)
+@WebAppConfiguration
 public class TrackerCoreConfigTest {
 
     @Autowired
